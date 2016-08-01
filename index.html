@@ -17,16 +17,14 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- nav section -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#myPage">
-        <img src="img/ikeja_logo.png" width="60" height="60"/>
-		FreeCodeCampIkeja</a>
+        <a class="navbar-brand" href="#myPage">FreeCodeCampIkeja</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right nav-items
@@ -68,105 +66,29 @@
   <div id="join-bg">
     <section id="join" class="container">
       <div class="row">
-        <div id="contact-form" class="col-sm-6 ">
-         
-          
+        <div id="contact-form" class="col-sm-6 pull-left">
+          <h3 class="text-center">Contact</h3>
+          <p class="text-center"><em>We'd love to hear from you.</em></p>
           <div class="row">
-            
-			<!--Register Starts Here-->
-<div id="register" class="animated fadeInRight">
-            <span class="form"></span>
-            <h1></h1>
-            <form class="form-horizontal" action="#" method="post">
-
-              <h2 class="text-center">Membership Registraton Form</h2>
-              <div class="flash"><?php echo $message; ?></div>
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>Surname: </label>
-                  <input type="text" class="form-control"  placeholder="Surname..........." name="sname">
-                </div>
-              </div>
-              
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>First Name: </label>
-                  <input type="text" class="form-control"  placeholder="First Name..........." name="fname">
-                </div>
-              </div>
-              
-
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>Gender: </label>
-                  <select class="form-control input-sm" name="gender" id="mycategory">
-                    <option>--Choose--</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>State of Origin:</label>
-                  <input type="text" class="form-control" placeholder="State of Origin......" name="state">
-                </div>
-              </div>
-
-              
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>Nationality: </label>
-                  <input type="text" class="form-control"  placeholder="Nationality.............." name="nationality">
-                </div>
-              </div>
-
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>Coding Level: </label>
-                  <select class="form-control input-sm" name="gender" id="mycategory">
-                    <option>--Choose--</option>
-                    <option>Novice</option>
-                    <option>Newbies</option>
-                    <option>Intermediate</option>
-                    <option>Full-stack</option>
-                    <option>Profession</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="form-group has-success">
-
-                <div class="col-sm-8 col-sm-offset-2">
-                  <label>Date of Birth: </label>
-                  <input type="text" class="form-control" id="datepicker" placeholder="" name="dob">
-                  
-                </div>
-              </div>
-
-              
-                      
-                
-
-
-              <div class="col-sm-offset-2">
-               <input type="submit" value="Register" class="btn btn-primary text-center" name="reg" />
-
-              </div>
-
-              
-            </form>
+            <div class="col-sm-12">
+              <p><span class="glyphicon glyphicon-phone"></span>Phone: </p>
+              <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+            </div>
           </div>
-          
-          <!--Reigister ends here -->
-			
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <br>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button class="btn pull-right" type="submit">Send</button>
+            </div>
           </div>
         </div>
       </div>
@@ -178,13 +100,6 @@
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
   </footer>
-  
-  <script>
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-</script>
-  
 </body>
 
 </html>

@@ -6,19 +6,6 @@ body {
 
 
 /* IDs */
-.navbar-inverse{
-background: green !important;
-}
-.navbar-inverse #active {
-  background-color: green !important;
-  color: #fff !important;
-}
-
-
-.navbar-brand img {
-   float: left;
-   margin-top: 0px;
-}
 
 #landing {
   background: url("../img/campers2.jpg");
@@ -56,7 +43,7 @@ background: green !important;
 }
 
 .navbar a {
-  color: #fff !important;
+  color: green !important;
   /* Really shouldn't need important */
 }
 
