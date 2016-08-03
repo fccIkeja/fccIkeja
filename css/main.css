@@ -176,6 +176,14 @@ hr{
     max-width: 70%;
     border-width: 2px;
 }
+footer{
+    text-align: center;
+    padding: 24px 0;
+    background-color: #ccd;
+    width: 100%;
+    font-size: 17px;
+    color: #999;
+}
 
 
 
