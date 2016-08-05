@@ -161,7 +161,12 @@ html, body{
 .navbar-brand{
     color: 18px;
     font-size: 24px;
-    
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: green;
+  background-color: brown;
 }
 /*Set jumbotron container transparent*/
 .jumbotron {
@@ -179,10 +184,17 @@ hr{
 footer{
     text-align: center;
     padding: 24px 0;
-    background-color: #ccd;
+    background-color: #444;
     width: 100%;
     font-size: 17px;
-    color: #999;
+    color: #ddd;
+}
+footer a{
+    color: #ddd;
+}
+footer a:hover{
+    color: #ddd;
+    text-decoration: none;
 }
 
 
@@ -208,4 +220,8 @@ footer{
     .navbar-collapse{
         background-color: darkgreen;
     }
+}
+
+.nav-active .active a{
+    background-color: brown
 }
