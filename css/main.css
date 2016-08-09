@@ -26,7 +26,7 @@ html, body{
 #landing .btn{
     padding: 18px 50px;
     border-radius: 29px;
-    background-color: darkgreen;
+    background-color: green;
     color: #eee;
     font-size: 17px;
     margin-top: 12px
@@ -41,12 +41,51 @@ html, body{
 #landing h3{
     margin-bottom: 31px;
 }
+/*Event venue container*/
+#events-venue{
+    background: url(../img/fcc2.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 150px 0;
+    position: relative;
+    border-radius: 6px;
+}
+#events-venue-info{
+    color: #eee;
+    font-weight: 100;
+    font-size: 19px;
+    background-color: rgba(0,128,0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#events-venue-info h3{
+    margin: 24px 0 0 35px;
+    line-height: 35px;
+}
+
+#events{
+    padding: 100px 0;
+}
+#events .btn{
+    padding: 12px 35px;
+    border-radius: 29px;
+    background-color: green;
+    color: #eee;
+    font-size: 17px;
+    margin-top: 12px
+}
 /*Add about section*/
 #about{
     color: rgba(255,255,255,.8);
     letter-spacing: 1px;
     padding: 100px 0;
-    background-color: darkgreen;
+    background-color: green;
     width: 100%;
     bottom: 0;
 }
@@ -67,45 +106,18 @@ html, body{
     width: 100%;
 }
 #members{
-    color: #777
+    color: #777;
     letter-spacing: 1px;
     padding: 100px 0;
     background-color: #eee;
     width: 100%;
 }
 
-/*set the bcakground color of the members section*/
-.members{
-    background-color:#eee;;
-}
 /*set the properties of the container to wrap the users boxes in horizontal view*/
 #allmembers{
     display: flex;
     flex-wrap: wrap;
     
-}
-/* set the background shadow of the users boxes*/
-.users{
-   -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-  width:22%;
-  height:300px;
-  padding:20px;
-  background-color:white;
-  margin:15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  
-}
-/* set each box to cover the full screen on smaller devices*/
-@media screen and (max-width:904px){
-  .users{
-    width:90%;
-    margin:10px;
-    height:350px;
-  }
 }
 
 #userimage{
@@ -119,15 +131,6 @@ html, body{
 }
 #skills li{
     margin-right:10px;
-}
-.users a{
-    text-decoration: none;
-}
-.users a h4{
-    background-color: green;
-    padding:15px;
-    border-radius:25px;
-    color: white;
 }
 
 
@@ -165,14 +168,79 @@ html, body{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: green;
-  background-color: brown;
+  color: #fff;
+  background-color: green;
+    border-top: 3px solid transparent;
+    
+}
+/* Event navbar section*/
+.nav-event-header{
+    float: left;
+    font-weight: bolder;
+    font-size: 35px
+}
+.nav-event-link{
+    float: right;
+}
+.navbar-ul li{
+    list-style: none;
+    float: left;
+    font-size: 17px;
+    margin: 0 12px;
+    padding: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.navbar-event a{
+    color: #333;
+    text-decoration: none;
+    font-size: 26px;
 }
 /*Set jumbotron container transparent*/
 .jumbotron {
   background: transparent;
     width: 100%;
     padding: 100px 0;
+}
+
+/* set the background shadow of the users boxes*/
+.users{
+   -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  width:22%;
+  height:300px;
+  padding:20px;
+  background-color:white;
+  margin:15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  
+}
+
+/*set the bcakground color of the members section*/
+.members{
+    background-color:#eee;;
+}
+
+.users a{
+    text-decoration: none;
+}
+.users a h4{
+    background-color: green;
+    padding:15px;
+    border-radius:25px;
+    color: white;
+}
+.event-container{
+    padding: 100px 0;
+}
+.event-past #past h3{
+    margin-top: 50px;
+}
+.event-past #past #events-venue{
+    margin-top: 50px;
 }
 
 /* others */
@@ -202,12 +270,40 @@ footer a:hover{
 /**MEDIA QUEIES**/
 
 /*when mobile view, resize navbar-brand be parallel with the nav button*/
-@media only screen and (max-width: 357px) {
-    .navbar-brand {
-        font-size: 19px;
+
+/* set each box to cover the full screen on smaller devices*/
+@media screen and (max-width:904px){
+  .users{
+    width:90%;
+    margin:10px;
+    height:350px;
+  }
+    #events .btn{
+        margin-left: 120px;
     }
 }
-/*resize the font size in count section when in mobile view*/
+@media only screen and (max-width: 768px) {
+    .navbar-collapse{
+        background-color: green;
+    }
+    .nav-event-header{
+        font-size: 25px;
+    }
+    .navbar-ul li a{
+        font-size: 19px;
+    }
+    #events .btn{
+        margin-bottom: 24px;
+        margin-left: 120px;
+    }
+    #events-venue-info h3{
+    margin: 45px 0 0 70px;
+    line-height: 35px;
+    }
+    .event-past #past #events-venue{
+        margin-top: 30px;
+    }
+}
 @media only screen and (max-width: 400px) {
     #cout h2{
         font-size: 2px;
@@ -215,13 +311,30 @@ footer a:hover{
     #count p{
         font-size: 10px;
     }
+    
 }
-@media only screen and (max-width: 768px) {
-    .navbar-collapse{
-        background-color: darkgreen;
+@media only screen and (max-width: 357px) {
+    .navbar-brand {
+        font-size: 19px;
+    }
+    
+    .nav-event-header{
+        font-size: 15px;
+    }
+    .navbar-ul li a{
+        font-size: 15px;
+    }
+    #events .btn{
+        margin-bottom: 24px;
+        margin-left: 20%;
+    }
+    #events-venue-info h3{
+        font-size: 19px;
+        margin: 24px 0 0 19px;
     }
 }
+/*-----------------*/
 
-.nav-active .active a{
-    background-color: brown
+.active{
+    border-top: 3px solid red;
 }
