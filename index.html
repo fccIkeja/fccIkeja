@@ -6,17 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Stylesheets -->
-     <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-  <!-- Scripts -->
-  <script src="js/jquery-1.12.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-    </script>
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
@@ -32,7 +27,6 @@
           <li><a id='scroll' href="#about"><em>About</em></a></li>
           <li><a id='scroll' href="#members"><em>Members</em></a></li>
           <li><a id='scroll' href="#events"><em>Events</em></a></li>
-          <li><a id='scroll' href="#contact"><em>Contact</em></a></li>
         </ul>
       </div>
     </div>
@@ -46,7 +40,7 @@
                 <h3>..for the love of open source</h3>
             </div>
         </div>
-        <a id='scroll join-btn' href='#join' class='btn'>JOIN US</a>
+        <a id='scroll join-btn' href='https://www.facebook.com/groups/free.code.camp.ikeja' class='btn'>JOIN US</a>
     </div>
   </section>
   <!-- Container (about Section) -->
@@ -83,9 +77,7 @@
                 <div class='row'>
                     <div class='col-lg-9 col-md-9 col-sm-6 col-xs-12'>
                         <h3 class='text-center'>CODE CHALLENGES</h2>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        
-                        </h4>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
                     </div>
                     <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                         <img src='img/campers2.jpg' class='img-responsive img-rounded'>
@@ -112,39 +104,79 @@
     
     <!--count section-->
     
-    <section id='members'>
-        <div class='container'>
+    <section id='members' >
+        <div class='container jumbotron'>
+          <div class="col-md-10 col-md-offset-1">
+
+          
             <div class='row  text-center'>
                 <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
-                    <h2>OVER 400</h3>
+                    <h1>OVER 400</h1>
                     <p>MEMBERS</p>
                 </div><!--end count col-->
                 <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
-                    <h2>OVER 25</h3>
+                    <h1>OVER 25</h1>
                     <p>CERTIFIED FRONT-END DEVELOPERS</p>
                 </div><!--end count col-->
                 <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
-                    <h2>OVER 400</h3>
+                    <h1>OVER 400</h1>
                     <p>EVERYDAY LEARNERS</p>
                 </div><!--end count col-->
             </div><!--end count row-->
+          </div><!-- This is the new div i kept -->
         </div><!--end count container-->
     </section>
     
-     <!--members section-->
+    <!--members section-->
     <section class="container-fluid members text-center">
          <h1>MEMBERS</h1><br/><br>
-          <div class="container" id="allmembers">
+    <div class="container" id="allmembers">
         
-          </div>
+    </div>
+    <div class="container" id="allmembers1">
+        
+    </div>
+        <!--button to display all members-->
+        <button type="button" class="btn btn-success" id="membersButton">SHOW MORE</button>
     </section>
+
+  <!--Event Section-->
+  <section id='events' class="container-fluid">
+       <div class='container'>
+             <nav class='navbar-event'>
+                  <div class='nav-event-header'>EVENTS</div>
+                  <div class='nav-event-link'>
+                     <ul class="navbar-ul">
+                           <li id='all' class='active'><a target="blank" href="">ALL</a></li>
+                         <li id='next'><a target="blank" href="">UPCOMING</a></li>
+                          <li id='previous'><a target="blank" href="">PAST</a></li>
+                      </ul>
+                 </div>
+              </nav>
+             <div class='event-container'>
+
+             </div>
+              <div class='event-past'>
+
+            </div>
+         </div>
+     </section>
    
   <!-- Footer -->
-  <footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
+  <footer id='footer'>
+            Copyright &copy; 2016, FreeCode Camp, Ikeja.
+         <a class="up-arrow pull-right" href="#myPage" data-toggle="tooltip" title="TO TOP"><span class="glyphicon glyphicon-chevron-up"></span></a>
+         <a class="up-arrow pull-left" href="#myPage" data-toggle="tooltip" title="TO TOP"><span class="glyphicon glyphicon-chevron-up"></span></a>
   </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+   
 </body>
 
 </html>
